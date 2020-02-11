@@ -104,9 +104,10 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border: 1px solid whitesmoke;
+    border-radius: 5%;
     margin-top: 200px;
     margin-bottom: 100px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .item {
@@ -152,6 +153,8 @@ hr
     margin-right: 10%;
     margin-left: 10%;
     text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 15px;
 }
 
 .about-div hr {
