@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Fried Egg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="other-bg">
     <nav>
-        <a href="index.html"><div class="logo">R E C I P E B O O K</div></a>
+        <a href="/"><div class="logo">R E C I P E B O O K</div></a>
         <ul class="nav-ul">
-            <li><a href="recipes.html">LIST OF RECIPES</a></li>
-            <li><a href="pasta.html">PASTA</a></li>
-            <li><a href="noodles.html">NOODLES</a></li>
-            <li><a href="fried-egg.html">FRIED EGG</a></li>
-            <li><a href="curry.html">CURRY</a></li>
-            <li><a href="croissant.html">CROISSANT</a></li>
+            <li><a href="/recipes">LIST OF RECIPES</a></li>
+            <li><a href="/pasta">PASTA</a></li>
+            <li><a href="/noodles">NOODLES</a></li>
+            <li><a href="/fried-egg">FRIED EGG</a></li>
+            <li><a href="/curry">CURRY</a></li>
+            <li><a href="/croissant">CROISSANT</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <h1>Fried Egg</h1>
-        <br>
 
-        <div class="ingred">
+        <div class="recipe">
+            <h1>Fried Egg</h1>
+            <br>
             <h2>Ingredients</h2>
             <ul>
                 <li>Egg</li>
                 <li>Butter</li>
                 <li>Salt & Pepper</li>
             </ul>
-        </div>
+
         <br>
-        <div class="dir">
             <h2>Directions</h2>
             <ol>
                 <li>Melt butter in pan</li>
                 <li>Fry egg in butter</li>
                 <li>Add salt & pepper to taste</li>
             </ol>
-        </div>
-        <br>
 
+        <br>
         <h2>Serves 1 person</h2>
+        </div>
+        <div class="food-img">
+            <img src="../img/egg.PNG" alt="fried egg">
+        </div>
     </div>
 
 </body>

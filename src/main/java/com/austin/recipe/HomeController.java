@@ -9,4 +9,34 @@ public class HomeController {
     public String index() {
         return "index";
     }
+
+    @RequestMapping("/recipes")
+    public String recipes() {
+        return "recipes";
+    }
+
+    @RequestMapping("/pasta")
+    public String pasta() {
+        return "pasta";
+    }
+
+    @RequestMapping("/noodles")
+    public String noodles() {
+        return "noodles";
+    }
+
+    @RequestMapping("/fried-egg")
+    public String friedEgg() {
+        return "fried-egg";
+    }
+
+    @RequestMapping("/curry")
+    public String curry() {
+        return "curry";
+    }
+
+    @RequestMapping("/croissant")
+    public String croissant() {
+        return "croissant";
+    }
 }

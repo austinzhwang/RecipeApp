@@ -4,17 +4,9 @@
     box-sizing: border-box;
 }
 
-html {
-    background: url("../img/food-bg.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: white;
 }
 
 nav {
@@ -30,8 +22,7 @@ nav {
     display: inline-block;
     padding: 5px;
     border: 1px solid white;
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none !important;
 }
 
 .nav-ul {
@@ -41,14 +32,20 @@ nav {
 }
 
 .nav-ul li {
-    color: #fff;
+    color: white;
+    text-decoration: none;
 }
 
 li a {
     display: inline-block;
     padding: 10px 15px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main {
@@ -59,14 +56,68 @@ li a {
 }
 
 .main-txt {
+    color: white;
     border: 1px solid white;
     padding: 5px;
 }
 
+body, html {
+    height: 100%;
+}
+
+.ind-bg {
+    /* The image used */
+    background: url("../img/food-bg.jpg") center center fixed;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+
+    background-size: cover;
+}
+
+.other-bg {
+    /* The image used */
+    background: url("../img/bg-blank.png") center center fixed;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+
+    background-size: cover;
+}
+
 .container {
+    color: white;
+    height: 90vh;
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+.img-container {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container>div {
+    flex: 0 50%;
+    /*demo*/
+}
+
+
 

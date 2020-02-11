@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Recipe Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="other-bg">
     <nav>
-        <a href="index.html"><div class="logo">R E C I P E B O O K</div></a>
+        <a href="/"><div class="logo">R E C I P E B O O K</div></a>
         <ul class="nav-ul">
-            <li><a href="recipes.html">LIST OF RECIPES</a></li>
-            <li><a href="pasta.html">PASTA</a></li>
-            <li><a href="noodles.html">NOODLES</a></li>
-            <li><a href="fried-egg.html">FRIED EGG</a></li>
-            <li><a href="curry.html">CURRY</a></li>
-            <li><a href="croissant.html">CROISSANT</a></li>
+            <li><a href="/recipes">LIST OF RECIPES</a></li>
+            <li><a href="/pasta">PASTA</a></li>
+            <li><a href="/noodles">NOODLES</a></li>
+            <li><a href="/fried-egg">FRIED EGG</a></li>
+            <li><a href="/curry">CURRY</a></li>
+            <li><a href="/croissant">CROISSANT</a></li>
         </ul>
     </nav>
 
-    <div class="contain">
-        <div class="in">
-            <a href="pasta.html">PASTA</a>
-            <a href="noodles.html">NOODLES</a>
+    <div class="img-container">
+        <div class="item">
+            <a href="/pasta"><img src="../img/pasta.PNG" alt="pasta" height="150" width="175"></a>
+            <p>Pasta</p>
         </div>
-
-        <div class="in">
-            <a href="fried-egg.html">FRIED EGG</a>
-            <a href="curry.html">CURRY</a>
+        <div class="item">
+            <a href="/noodles"><img src="../img/noodles.PNG" alt="noodles" height="150" width="175"></a>
+            <p>Noodles</p>
         </div>
-
-        <div class="in">
-            <a href="croissant.html">CROISSANT</a>
+        <div class="item">
+            <a href="/fried-egg"><img src="../img/egg.PNG" alt="fried egg" height="150" width="175"></a>
+            <p>Fried Egg</p>
+        </div>
+        <div class="item">
+            <a href="/curry"><img src="../img/curry.PNG" alt="curry" height="150" width="175"></a>
+            <p>Curry</p>
+        </div>
+        <div class="item">
+            <a href="/croissant"><img src="../img/croissant.PNG" alt="croissant" height="150" width="175"></a>
+            <p>Croissant</p>
         </div>
     </div>
-
-
 
 </body>
 </html>
